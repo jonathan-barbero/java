@@ -1,7 +1,10 @@
 package ar.com.job.java8.features.annotations;
 
-@ClassType(role = MVC.MODEL)
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 
+@ClassType(role = MVC.MODEL)
+@Retention(RetentionPolicy.RUNTIME)
 public @interface Version {
 
 	int major();
